@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Hanken Grotesk !important;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #ebf1ff;
+}
+
+.main {
+  width: 736px;
+  height: 512px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  auto;
+  border-radius: 32px;
+  background: #fff;
+}
+.main .first {
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+  background: #8d323292;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  color: #fff;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
+  border-radius: 32px;
+  text-align: center;
+}
+.main .first .first__header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main .first .circle {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 35px auto;
+  justify-content: center;
+  position: relative;
+  line-height: 72px;
+}
+.main .first .circle .circle__text {
+  position: absolute;
+  padding: 40px;
+}
+.main .first .circle .circle__text h2 {
+  font-size: 62px;
+}
+.main .first .circle .circle__text p {
+  font-size: 18px;
+  opacity: 0.5168;
+}
+.main .first h4 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 14px;
+}
+
+.main .first p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--Light-Blue, #cac9ff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+}
+/*  */
+.main .second {
+  width: 50%;
+  background: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+  padding: 20px;
+  border-bottom-right-radius: 32px;
+}
+
+ul li {
+  list-style: none;
+  background: #00000081;
+  color: #303b59;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  height: 56px;
+  font-weight: 500;
+  gap: 12px;
+  padding: 6px;
+  position: relative;
+}
+
+.path__percent {
+  position: absolute;
+  right: 10px;
+}
+.path__full {
+  color: #303b59;
+  opacity: 0.5;
+}
+.second__list-one {
+  background: var(
+    --red-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55
+  );
+}
+.second__list-one .path__title {
+  color: #ff5555;
+}
+
+.second__list-two {
+  background: var(
+    --yellow-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e
+  );
+}
+.second__list-two .path__title {
+  color: #ffb21e;
+}
+
+.second__list-three {
+  background: var(
+    --green-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f
+  );
+}
+.second__list-three .path__title {
+  color: #00bb8f;
+}
+
+.second__list-four {
+  background: var(
+    --blue-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6
+  );
+}
+.second__list-four .path__title {
+  color: #1125d6;
+}
+
+.submit {
+  width: 100%;
+  border-radius: 128px;
+  background: var(--Dark-Navy, #303b59);
+  height: 58px;
+  color: #fff;
+  margin-top: 41px;
+  font-size: 18px;
+  cursor: pointer;
+  border: transparent;
+  outline: transparent;
+  transition: 1.3s ease-in-out;
+}
+.submit:hover {
+  border-radius: 128px;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+
+    .main{
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 810px;
+        margin:  0 auto !important;
+    }
+    .main .first{
+        padding:20px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+        z-index: 1;
+        border-radius: 0;
+        border-radius: 0px 0px 32px 32px;
+    }
+    .main .second{
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        height: 55%;
+    }
+    .main .first .circle {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        margin: 25px auto !important;
+        justify-content: center;
+        position: relative;
+        line-height: 72px;
+        margin-top: -20px !important;
+        margin-bottom: 50px !important;
+    }
+    .circle__text h2{
+        font-size: 56px;
+
+      }
+  .submit{
+    margin-bottom: 10px;
+  }
+
+}
